@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation" >
+	
+    <string name="app_name">PCRemote</string>
+    <string name="main_text"></string>
+    <string name="kb_button">KB</string>
+    <string name="rc_button">RClick</string>
+    <string name="lc_button">LClick</string>
+    <string name="bt_button">BT</string>
+    
+	<string name="up_button">↑</string>
+	<string name="down_button">↓</string>
+	<string name="left_button">←</string>
+	<string name="right_button">→</string>
+	<string name="NE_button">→↑</string>
+	<string name="NW_button">↑←</string>
+	<string name="SW_button">↓←</string>
+	<string name="SE_button">→↓</string>
+
+</resources>

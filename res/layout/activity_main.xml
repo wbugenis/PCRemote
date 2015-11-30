@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/textIn"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/mac_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters" />
+
+    <Button        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openKeyboard"
+        android:text="@string/kb_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="sendRightClick"
+        android:text="@string/rc_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="sendLeftClick"
+        android:text="@string/lc_button" />
+
+    <Button        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="btSetup"
+        android:text="@string/bt_button" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMouseUp"
+        android:text="@string/up_button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="sendMouseRight"
+        android:text="@string/right_button"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/out"
+        android:layout_toLeftOf="@+id/button1"
+        android:onClick="sendMouseLeft"
+        android:text="@string/left_button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="80sp"
+        android:layout_height="80sp"       
+        android:layout_toRightOf="@+id/button1"
+        android:layout_above="@+id/button2"
+        android:onClick="sendMouseNE"
+        android:text="@string/NE_button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_above="@+id/button4"
+        android:layout_toLeftOf="@+id/button1"
+        android:onClick="sendMouseNW"
+        android:text="@string/NW_button"
+        android:textSize="20sp" />
+    
+	<Button
+        android:id="@+id/button7"
+        android:layout_width="80sp"
+        android:layout_height="80sp"      
+        android:layout_below="@+id/button4"
+        android:layout_toLeftOf="@+id/button3"
+        android:onClick="sendMouseSW"
+        android:text="@string/SW_button"
+        android:textSize="20sp" />
+	
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button3"
+        android:onClick="sendMouseSE"
+        android:text="@string/SE_button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/button4"
+        android:layout_toRightOf="@+id/button4"
+        android:onClick="sendMouseDown"
+        android:text="@string/down_button"
+        android:textSize="20sp" />
+
+</RelativeLayout>
